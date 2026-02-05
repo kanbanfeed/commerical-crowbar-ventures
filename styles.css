@@ -1,0 +1,182 @@
+:root {
+  --accent: #0A4D8C;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e5e5e5;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.header-ctas .btn {
+  margin-left: 12px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 140px 0 80px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.subheadline {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.hero-ctas {
+  margin-top: 24px;
+}
+
+.hero-ctas .btn {
+  margin-right: 12px;
+}
+
+.hero-note {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Sections */
+section {
+  padding: 64px 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.box,
+.step {
+  border: 1px solid var(--border);
+  padding: 24px;
+}
+
+.step-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Pricing */
+.pricing-box {
+  border: 1px solid var(--border);
+  padding: 32px;
+}
+
+.pricing-note {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Proof */
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  margin: 24px 0;
+  color: var(--muted);
+}
+
+blockquote span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-ctas {
+    display: none;
+  }
+}
+.footer-logo{
+    display: flex;
+}
+.footer-logo-text{
+    vertical-align: middle;
+    margin-top: 10px;
+}
