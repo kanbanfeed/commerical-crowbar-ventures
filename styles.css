@@ -72,7 +72,7 @@ body {
 
 /* Hero */
 .hero {
-  padding: 140px 0 80px;
+  padding: 100px 0 80px;
 }
 
 .hero h1 {
@@ -101,7 +101,7 @@ body {
 
 /* Sections */
 section {
-  padding: 64px 0;
+  padding: 40px 0;
 }
 
 .grid-3 {
@@ -179,4 +179,126 @@ blockquote span {
 .footer-logo-text{
     vertical-align: middle;
     margin-top: 10px;
+}
+
+/* Image Styles */
+.responsive-image {
+  width: 100%;
+  height: 60vh;
+  display: block;
+}
+
+/* Hero Image */
+.hero-image {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* Section Images */
+.section-image {
+  margin: 2rem auto 3rem;
+  max-width: 800px;
+}
+
+/* What We Do Box Images */
+.box-image {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* How It Works Step Images */
+.step-image {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 150px;
+}
+
+.step-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.process-note-image {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+/* Pricing Image */
+.pricing-image {
+  margin: 0 auto 2rem;
+  max-width: 400px;
+}
+
+/* Proof/Testimonial Images */
+.quote-image {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 120px;
+}
+
+.quote-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Legal Links Image */
+.legal-image {
+  margin: 0 auto 1.5rem;
+  max-width: 300px;
+}
+
+/* Footer Brand Image */
+.footer-brand-image {
+  margin: 0 auto 2rem;
+  max-width: 400px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .box-image {
+    height: 150px;
+  }
+  
+  .step-image {
+    height: 120px;
+  }
+  
+  .quote-image {
+    height: 100px;
+  }
+  
+  .hero-image,
+  .section-image {
+    margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .box-image {
+    height: 120px;
+  }
+  
+  .step-image {
+    height: 100px;
+  }
+  
+  .quote-image {
+    height: 80px;
+  }
+}
+
+.hero-image{
+  width: 100vw;
 }
